@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Montserrat:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*cuerpo de pagina*/
+
+body{
+    margin: 0;
+    background-color:#FEF2F4 ;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/*tamaño de las imagenes*/
+
+img{
+    max-width: 100%;
+}
+
+/*nav bar*/
+
+.boton-menu{
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .boton-menu {
+        display: none;
+    }
+}
+.menu-principal__item{
+    padding: 1em;
+}
+
+.menu-principal{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCC8D1 ;
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    .menu-principal {
+        flex-direction: row;
+    }
+}
+.menu-principal__item{
+    padding: 1em;
+}
+
+ 
+
+.menu-principal__link{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*parrafo*/
+
+.titulo{
+    margin-right: 250px;
+    margin-left: 400px;
+    padding: 50px;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parrafo{
+    text-align: center;
+    
+    }
+
+/*imagenes de la grilla pricipal*/
+
+.galeria{
+text-align: center;
+}
+
+/*pie de pagina*/
+
+.footer{
+    background-color: #FFABAB;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.carousel-inner img{
+    width: 100%;
+    max-height: 460px;
+}
+
+.carousel-inner{
+    height: 500px;
+}
+
+.banner{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .banner, .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
