@@ -1,0 +1,8 @@
+/* Bucles*/
+@for $i from 1 through 6{
+    .imagen-mercaderia{
+        &:nth-child(#{$i}){
+            grid-area: uno;
+        }
+    }
+}
