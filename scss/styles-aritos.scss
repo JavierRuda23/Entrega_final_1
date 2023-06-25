@@ -3,16 +3,18 @@
     font-family: 'Castoro Titling', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px
 }
 
 /*cuerpo de la pagina*/
+
 body{
     margin: 0;
     background-color:#FEF2F4 ;
 }
 
-
 /*tamaño de las imagenes*/
+
 img{
     max-width: 100%;
 }
@@ -20,8 +22,8 @@ img{
 /*imagenes de la grilla pricipal*/
 
 .imagenes{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 30px 20px;
     
 }
@@ -36,13 +38,12 @@ img{
     border: none;
     background: #FCC8D1;
     color: #fff;
-    padding: 5px 15px;
+    padding: 15px 30px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.imagen-mercaderia:hover{
-
+.imagen-mercaderia{
     max-width: 350px;
     padding: 10px;
     margin: auto;
@@ -53,14 +54,14 @@ img{
     
 }
 
-/* Seccion Carrito de compras */
-
 .contenedores{
     display: grid;
     grid-template-areas:
     "uno dos tres"
     "cuatro cinco seis"
+
 }
+
 /* Media Query mobile first */
 
 @media screen and (max-width: 768px) {
@@ -71,11 +72,12 @@ img{
     }
 }
 
+
 /* Bucles*/
 @for $i from 1 through 6{
     .imagen-mercaderia{
         &:nth-child(#{$i}){
-            grid-area: uno;
+            grid-area:uno;
         }
     }
 }
